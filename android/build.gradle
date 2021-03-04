@@ -43,9 +43,10 @@ repositories {
     }
     google()
     jcenter()
+    mavenCentral()
 }
 
-def FACEBOOK_SDK_VERSION = safeExtGet('facebookSdkVersion', '[7.1.0, 9)')
+def FACEBOOK_SDK_VERSION = safeExtGet('facebookSdkVersion', '9.0.+')
 
 dependencies {
     //noinspection GradleDynamicVersion
